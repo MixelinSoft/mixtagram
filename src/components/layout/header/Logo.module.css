@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-family: LogoFont;
+  font-size: 30px;
+}
+.button {
+  margin-left: 8px;
+
+  font-size: 20px;
+
+  color: grey;
+}
