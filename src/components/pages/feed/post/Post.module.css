@@ -42,6 +42,7 @@
 }
 
 .creatorVerificated {
+  margin-right: 4px;
   color: steelblue;
 }
 
@@ -63,6 +64,8 @@
 
   height: 18px;
 
+  margin-bottom: 10px;
+
   font-size: 14px;
   font-weight: 800;
 }
@@ -80,4 +83,9 @@
 
 .numberOfLikes {
   margin-right: 4px;
+}
+
+.descriptionText {
+  font-size: 14px;
+  font-weight: 400;
 }

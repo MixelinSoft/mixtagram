@@ -108,7 +108,17 @@ const Post = ({ post }) => {
           <div className={styles.numberOfLikes}>777</div>
           <div className={styles.likeText}>Отметок "Нравится"</div>
         </div>
-        <div className={styles.description}></div>
+        <div className={styles.description}>
+          <div className={styles.creatorInfo}>
+            <span className={styles.creatorName}>MarsCuteCat</span>
+            <span className={styles.creatorVerificated}>
+              <MdVerified />
+            </span>
+            <span className={styles.descriptionText}>
+              Лежу на стуле - на чиле, на расслабоне.
+            </span>
+          </div>
+        </div>
         <div className={styles.comments}></div>
         <div className={styles.timeStamp}></div>
       </div>
