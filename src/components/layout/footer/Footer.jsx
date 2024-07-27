@@ -87,8 +87,8 @@ const Footer = () => {
         <div className={styles.profile}>
           <img
             src={profileImage}
-            width='30px'
-            height='30px'
+            width='24px'
+            height='24px'
             // alt='cat'
           />
         </div>
