@@ -1,7 +1,7 @@
 import ActionButton from '../../ui/ActionButton/ActionButton';
 
 // Import Profile Image
-import profileImage from '../../../assets/images/profile/profileImage.jpeg';
+import profileImage from '../../../assets/images/profile/profileImage.webp';
 
 // Import Icons
 import { GoHomeFill } from 'react-icons/go';
