@@ -1,0 +1,36 @@
+[
+  {
+    "user": {
+      "userName": "MarsCuteCat",
+      "isVerificated": true,
+      "userPhoto": "urlPhoto"
+    },
+    "post": {
+      "images": ["imageUrl", "imageUrl"],
+      "description": "Description",
+      "likes": {
+        "lastLiked": "urlPhoto",
+        "numberOfLikes": 123
+      },
+      "comments": 
+    }
+  }
+
+]
+
+  {
+    "user": {
+      "userName": "UserName",
+      "isVerificated": true,
+      "userPhoto": "urlPhoto"
+    },
+    "post": {
+      "images": ["imageUrl", "imageUrl"],
+      "description": "Description",
+      "likes": {
+        "lastLiked": "urlPhoto",
+        "numberOfLikes": 123
+      },
+      "comments": 
+    }
+  }
