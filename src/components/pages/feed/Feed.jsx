@@ -8,27 +8,12 @@ const Feed = (props) => {
   const dispatchAction = useDispatch();
   // Get Posts From Store
   const posts = useSelector((state) => state.feed.posts);
-
-  console.log(posts);
-  // Get Posts
+  // Get Posts From Server
   useEffect(() => {
     dispatchAction(getPosts());
-  }, []);
+  }, [dispatchAction]);
 
-  return (
-    <div>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-    </div>
-  );
+  return <div>{posts && posts.map((post) => <Post post={post} />)}</div>;
 };
 
 export default Feed;

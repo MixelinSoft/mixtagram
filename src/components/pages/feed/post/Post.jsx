@@ -7,17 +7,19 @@ import { FaRegHeart } from 'react-icons/fa';
 
 // Teset
 import creatorImage from '../../../../assets/images/profile/profileImage.webp';
-import imageSrc from '../../../../assets/images/feed/img001.jpg';
 import ActionButton from '../../../ui/ActionButton/ActionButton';
 
 const Post = ({ post }) => {
-  // const imageSrc = props.img;
-  // const description = props.description;
-  // const comments = props.comments;
-
   const creator = {
-    creatorImage: creatorImage,
+    creatorImage: post.user.userPhoto,
+    creatorName: post.user.userName,
+    creatorVerificted: post.user.isVerificated,
   };
+
+  const postImage = post.post.images[0];
+  const likes = post.post.likes;
+  const postDescription = post.post.description;
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -26,7 +28,7 @@ const Post = ({ post }) => {
             <img src={creator.creatorImage} alt='' width='32px' height='32px' />
           </div>
           <div className={styles.creatorInfo}>
-            <div className={styles.creatorName}>MarsCuteCat</div>
+            <div className={styles.creatorName}>{creator.creatorName}</div>
             {/* <div className={styles.postPlace}></div> */}
           </div>
           <div className={styles.creatorVerificated}>
@@ -41,11 +43,7 @@ const Post = ({ post }) => {
       </header>
 
       <div className={styles.image}>
-        <img
-          src='https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img001.jpg'
-          alt=''
-          width='100%'
-        />
+        <img src={postImage} alt='' width='100%' />
       </div>
 
       <div className={styles.info}>
@@ -107,20 +105,18 @@ const Post = ({ post }) => {
 
         <div className={styles.likes}>
           <div className={styles.lastLikedProfile}>
-            <img src={creatorImage} alt='' width='14px' height='14px' />
+            <img src={likes.lastLiked} alt='' width='14px' height='14px' />
           </div>
-          <div className={styles.numberOfLikes}>777</div>
+          <div className={styles.numberOfLikes}>{likes.numberOfLikes}</div>
           <div className={styles.likeText}>Отметок "Нравится"</div>
         </div>
         <div className={styles.description}>
           <div className={styles.creatorInfo}>
-            <span className={styles.creatorName}>MarsCuteCat</span>
+            <span className={styles.creatorName}>{creator.creatorName}</span>
             <span className={styles.creatorVerificated}>
               <MdVerified />
             </span>
-            <span className={styles.descriptionText}>
-              Лежу на стуле - на чиле, на расслабоне.
-            </span>
+            <span className={styles.descriptionText}>{postDescription}</span>
           </div>
         </div>
         <div className={styles.comments}></div>

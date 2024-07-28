@@ -27,7 +27,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img002.jpg"
       ],
-      "description": "Описание",
+      "description": "Нашёл баг на улице)",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 777
