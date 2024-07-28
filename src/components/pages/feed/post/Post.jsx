@@ -41,7 +41,11 @@ const Post = ({ post }) => {
       </header>
 
       <div className={styles.image}>
-        <img src={imageSrc} alt='' width='100%' />
+        <img
+          src='https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img001.jpg'
+          alt=''
+          width='100%'
+        />
       </div>
 
       <div className={styles.info}>

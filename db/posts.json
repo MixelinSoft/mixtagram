@@ -6,31 +6,15 @@
       "userPhoto": "urlPhoto"
     },
     "post": {
-      "images": ["imageUrl", "imageUrl"],
-      "description": "Description",
+      "images": [
+        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img001.jpg"
+      ],
+      "description": "Лежу на стуле - на чиле, на расслабоне.",
       "likes": {
         "lastLiked": "urlPhoto",
         "numberOfLikes": 123
       },
-      "comments": 
+      "comments": []
     }
   }
-
 ]
-
-  {
-    "user": {
-      "userName": "UserName",
-      "isVerificated": true,
-      "userPhoto": "urlPhoto"
-    },
-    "post": {
-      "images": ["imageUrl", "imageUrl"],
-      "description": "Description",
-      "likes": {
-        "lastLiked": "urlPhoto",
-        "numberOfLikes": 123
-      },
-      "comments": 
-    }
-  }
