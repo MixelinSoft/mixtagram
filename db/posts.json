@@ -3,7 +3,7 @@
     "user": {
       "userName": "MarsCuteCat",
       "isVerificated": true,
-      "userPhoto": "urlPhoto"
+      "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp"
     },
     "post": {
       "images": [
@@ -11,8 +11,62 @@
       ],
       "description": "Лежу на стуле - на чиле, на расслабоне.",
       "likes": {
-        "lastLiked": "urlPhoto",
-        "numberOfLikes": 123
+        "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
+        "numberOfLikes": 777
+      },
+      "comments": []
+    }
+  },
+  {
+    "user": {
+      "userName": "MarsCuteCat",
+      "isVerificated": true,
+      "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp"
+    },
+    "post": {
+      "images": [
+        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img002.jpg"
+      ],
+      "description": "Описание",
+      "likes": {
+        "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
+        "numberOfLikes": 777
+      },
+      "comments": []
+    }
+  },
+  {
+    "user": {
+      "userName": "MarsCuteCat",
+      "isVerificated": true,
+      "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp"
+    },
+    "post": {
+      "images": [
+        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img003.jpg"
+      ],
+      "description": "Описание",
+      "likes": {
+        "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
+        "numberOfLikes": 777
+      },
+      "comments": []
+    }
+  },
+  {
+    "user": {
+      "userName": "MarsCuteCat",
+      "isVerificated": true,
+      "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp"
+    },
+    "post": {
+      "images": [
+        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img004.jpg"
+      ],
+      "description": "Описание",
+      "likes": {
+        "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
+        "numberOfLikes": 777
       },
       "comments": []
     }
