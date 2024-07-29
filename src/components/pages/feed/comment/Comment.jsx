@@ -9,8 +9,10 @@ const Comment = ({ comment }) => {
       <div className={styles.userPhoto}>
         <img src={user.userPhoto} alt='userPhoto' width='32px' height='32px' />
       </div>
-      <span className={styles.userName}>{user.userName}</span>
-      <span>{text}</span>
+      <div className={styles.text}>
+        <span className={styles.userName}>{user.userName}</span>
+        <span>{text}</span>
+      </div>
     </div>
   );
 };
