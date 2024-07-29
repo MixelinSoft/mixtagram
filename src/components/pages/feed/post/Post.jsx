@@ -10,6 +10,7 @@ import ActionButton from '../../../ui/ActionButton/ActionButton';
 // Import CSS
 import styles from './Post.module.css';
 import { useState } from 'react';
+import Comment from '../comment/Comment';
 
 const Post = ({ post }) => {
   const creator = {
@@ -21,6 +22,7 @@ const Post = ({ post }) => {
   const postImage = post.post.images[0];
   const likes = post.post.likes;
   const postDescription = post.post.description;
+  const postComments = post.post.comments;
 
   return (
     <div className={styles.container}>
@@ -126,7 +128,10 @@ const Post = ({ post }) => {
             <span className={styles.descriptionText}>{postDescription}</span>
           </div>
         </div>
-        <div className={styles.comments}></div>
+        <div className={styles.comments}>
+          {postComments &&
+            postComments.map((comment) => <Comment comment={comment} />)}
+        </div>
         <div className={styles.timeStamp}></div>
       </div>
     </div>
