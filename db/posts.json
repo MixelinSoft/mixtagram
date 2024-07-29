@@ -14,7 +14,16 @@
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1875
       },
-      "comments": []
+      "comments": [
+        {
+          "user": {
+            "userName": "BallLoverPhill",
+            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/BallLoverPhill.webp",
+            "isVerificated": true
+          },
+          "comment": "Круто!"
+        }
+      ]
     }
   },
   {
@@ -45,7 +54,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img003.jpg"
       ],
-      "description": "Смотрю в окно и вижу мир, который не всегда виден.",
+      "description": "Созерцаю мир с высоты. Глубокие мысли посещают меня в этот момент.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1651
@@ -63,7 +72,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img004.jpg"
       ],
-      "description": "Вечер - время размышлений и мечтаний.",
+      "description": "Интересно, что там, за горизонтом? Может, там есть еще одно дерево, повыше?",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1290
@@ -81,7 +90,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img005.jpg"
       ],
-      "description": "Сны - это дверь в другой мир.",
+      "description": "С высоты птичьего полета все проблемы кажутся такими мелкими. Сижу тут, размышляю о смысле кошачьей жизни. Может, люди тоже когда-то лазили по деревьям? Или это только мы, коты, такие продвинутые?",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1524
@@ -99,7 +108,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img006.jpg"
       ],
-      "description": "Игра - это путь к самопознанию.",
+      "description": "Созерцаю потолок и размышляю о высоком. Что такое счастье? Почему кошки такие пушистые? И почему люди не умеют так расслабляться?",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1054
@@ -117,7 +126,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img007.jpg"
       ],
-      "description": "Солнце греет не только тело, но и душу.",
+      "description": "Я лежу так, чтобы было удобно наблюдать за всем происходящим. Иногда я даже представляю, что я лев, а этот пол - моя саванна.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1789
@@ -135,7 +144,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img008.jpg"
       ],
-      "description": "Мечты о еде - это тоже форма счастья.",
+      "description": "Я - король этого леса!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1623
@@ -153,7 +162,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img009.jpg"
       ],
-      "description": "Природа - это лучший учитель.",
+      "description": "Жизнь прекрасна, когда ты - король своего маленького мира.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1158
@@ -171,7 +180,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img010.jpg"
       ],
-      "description": "Лазер - это вызов, который я принимаю каждый день.",
+      "description": "Быть или не быть на дереве? Вот в чем вопрос. Но, честно говоря, мне здесь очень нравится.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 901
@@ -189,7 +198,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img011.jpg"
       ],
-      "description": "Ожидание - это искусство терпения.",
+      "description": "В глубине каждого леса живет маленький тигр.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1307
@@ -207,7 +216,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img012.jpg"
       ],
-      "description": "Вечера с близкими - это истинное богатство.",
+      "description": "Я тут подумал... А что если я сейчас взлечу?",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 789
@@ -225,7 +234,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img013.jpg"
       ],
-      "description": "В каждой игре есть своя философия.",
+      "description": "Кошачий нос всегда знает, где найти что-нибудь интересное.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 954
@@ -243,7 +252,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img014.jpg"
       ],
-      "description": "Любимый мячик - мой спутник в путешествии по жизни.",
+      "description": "Нашел идеальное укрытие от всех!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1123
@@ -261,7 +270,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img015.jpg"
       ],
-      "description": "Тёплый уголок - лучший друг в холодные дни.",
+      "description": "Я - наблюдатель. Мир интересен, особенно когда ты - его центр.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1345
@@ -279,7 +288,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img016.jpg"
       ],
-      "description": "Мир за окном - это бесконечное вдохновение.",
+      "description": "Я – главный техник этого отдела. Не беспокоить!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1452
@@ -297,7 +306,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img017.jpg"
       ],
-      "description": "Каждая преграда - это возможность для роста.",
+      "description": "Ага, нашел-таки интересное местечко! Целый цветочный город! Тут можно и поохотиться на бабочек, и в лилиях спрятаться. Аромат стоит такой, что просто дух захватывает! Только бы эти двуногие не мешали наслаждаться красотой природы. Ну, разве что погладить меня могут. Иногда.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 987
@@ -315,7 +324,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img018.jpg"
       ],
-      "description": "Секреты скрываются в самых неожиданных местах.",
+      "description": "Когда ты такой красивый, что даже во сне выглядишь идеально.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1380
@@ -333,7 +342,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img019.jpg"
       ],
-      "description": "Свобода - это умение быть собой.",
+      "description": "Чего уставились? Просто прохожу мимо, своими кошачьими делами занят.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1146
@@ -351,7 +360,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img020.jpg"
       ],
-      "description": "Природа - это истинный источник силы.",
+      "description": "Я - главный эксперт по кибербезопасности. Ни один вирус не пройдет!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1218
@@ -369,7 +378,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img021.jpg"
       ],
-      "description": "Свет и тень - это две стороны одной монеты.",
+      "description": "Я здесь просто так лежу, ничего особенного.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1047
@@ -387,7 +396,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img022.jpg"
       ],
-      "description": "Каждое утро - это новая возможность.",
+      "description": "Я - капитан этого корабля, а небо - мой океан. Ищу сокровища!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1302
@@ -405,7 +414,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img023.jpg"
       ],
-      "description": "Любовь - это тепло в душе.",
+      "description": "Кто сказал, что кошки не дружат с медведями? Вот, смотрите!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1187
@@ -423,7 +432,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img024.jpg"
       ],
-      "description": "Спокойствие - это внутренний покой.",
+      "description": "Я - кот. Я здесь живу. И мне все равно, что ты думаешь.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1348
@@ -441,7 +450,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img025.jpg"
       ],
-      "description": "Мечты - это крылья нашей души.",
+      "description": "Привет из джунглей моего двора!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1103
@@ -459,7 +468,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img026.jpg"
       ],
-      "description": "Прогулка на природе - это медитация.",
+      "description": "Кто сказал, что кошки не умеют расслабляться? Я - эксперт в этом деле!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1220
@@ -477,7 +486,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img027.jpg"
       ],
-      "description": "Звёзды - это мечты, которые ждут своего часа.",
+      "description": "Я - самый наблюдательный кот в округе.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1456
@@ -495,7 +504,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img028.jpg"
       ],
-      "description": "Тишина - это музыка для души.",
+      "description": "Наслаждаюсь весенним солнышком.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1092
@@ -513,7 +522,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img029.jpg"
       ],
-      "description": "Водопады - это природа в своём величии.",
+      "description": "Чего уставились? Хотите погладить мою пушистую шубку?",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1311
@@ -531,7 +540,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img030.jpg"
       ],
-      "description": "Простота - это истинное изящество.",
+      "description": "Я - самый важный член семьи. И точка!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1048
@@ -549,7 +558,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img031.jpg"
       ],
-      "description": "Каждый закат - это обещание нового дня.",
+      "description": "Я нашел идеальное место для зимней спячки. Не беспокоить!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1478
@@ -567,7 +576,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img032.jpg"
       ],
-      "description": "Счастье - это умение наслаждаться моментом.",
+      "description": "Я знаю все тайны этого дома. Но пока ничего не скажу.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1342
@@ -585,7 +594,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img033.jpg"
       ],
-      "description": "Цветы - это улыбка природы.",
+      "description": "Я - часть этого волшебного пейзажа.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1098
@@ -603,7 +612,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img034.jpg"
       ],
-      "description": "Каждый листок - это история, которую стоит услышать.",
+      "description": "Секреты зимнего леса знаю только я.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1207
@@ -621,7 +630,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img035.jpg"
       ],
-      "description": "Каждое утро - это шанс начать заново.",
+      "description": "Я - главный эксперт по наблюдению за птичками. ",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1376
@@ -639,7 +648,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img036.jpg"
       ],
-      "description": "Светит солнце - значит, день будет хорошим.",
+      "description": "В этом свете я вижу все тайны Вселенной.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1501
@@ -657,7 +666,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img037.jpg"
       ],
-      "description": "Осень - это время, когда природа отдыхает.",
+      "description": "Я не высокомерный, просто смотрю на вас свысока, чтобы лучше видеть ваши ошибки.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1264
@@ -675,7 +684,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img038.jpg"
       ],
-      "description": "Каждое путешествие - это открытие нового мира.",
+      "description": "Человеки думают, что они хозяева. Смешные.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1487
@@ -693,7 +702,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img039.jpg"
       ],
-      "description": "Снег - это поэзия зимы.",
+      "description": "Жизнь - это приключение. Главное - не бояться высоты.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1172
@@ -711,7 +720,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img040.jpg"
       ],
-      "description": "Каждая звезда - это мечта, к которой нужно стремиться.",
+      "description": "Моя жизнь - это борьба с гигантским плюшевым медведем за самое мягкое место на диване.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1245
@@ -729,7 +738,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img041.jpg"
       ],
-      "description": "Каждый день - это подарок, который нужно ценить.",
+      "description": "Сегодня на обед - рыба! Ну, или просто игрушка в виде рыбы.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1304
@@ -747,7 +756,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img042.jpg"
       ],
-      "description": "Каждая улыбка - это искорка счастья.",
+      "description": "Новый босс в офисе. Всем встать!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1186
@@ -765,7 +774,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img043.jpg"
       ],
-      "description": "Тишина ночи - это отдых для души.",
+      "description": "Я не сплю, я просто обдумываю мировое господство.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1135
@@ -783,7 +792,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img044.jpg"
       ],
-      "description": "Песок - это следы времени.",
+      "description": "Найдите меня, если сможете!",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1390
@@ -801,7 +810,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img045.jpg"
       ],
-      "description": "Каждый камешек - это часть великой истории.",
+      "description": "Наслаждаюсь моментом покоя. Мир слишком шумный для таких важных дел, как сон.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1173
@@ -819,7 +828,7 @@
       "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img046.jpg"
       ],
-      "description": "Каждое облако - это мечта, летящая в небо.",
+      "description": "Кто сказал, что супергерои не спят? Я вот отдыхаю после спасения мира.",
       "likes": {
         "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
         "numberOfLikes": 1442
