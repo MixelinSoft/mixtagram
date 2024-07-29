@@ -46,6 +46,10 @@
   color: steelblue;
 }
 
+.image {
+  min-height: 200px;
+}
+
 .postActions {
   font-size: 18px;
 }

@@ -1,13 +1,15 @@
-import styles from './Post.module.css';
-
 // Import Icons
 import { MdVerified } from 'react-icons/md';
 import { BsThreeDots } from 'react-icons/bs';
 import { FaRegHeart } from 'react-icons/fa';
-
-// Teset
-import creatorImage from '../../../../assets/images/profile/profileImage.webp';
+// Import LazyLoad Image Component
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+// Import Components
 import ActionButton from '../../../ui/ActionButton/ActionButton';
+// Import CSS
+import styles from './Post.module.css';
+import { useState } from 'react';
 
 const Post = ({ post }) => {
   const creator = {
@@ -43,7 +45,12 @@ const Post = ({ post }) => {
       </header>
 
       <div className={styles.image}>
-        <img src={postImage} alt='' width='100%' />
+        <LazyLoadImage
+          src={postImage}
+          alt='Post Image'
+          effect='blur'
+          width='100%'
+        />
       </div>
 
       <div className={styles.info}>
