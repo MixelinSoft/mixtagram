@@ -1,7 +1,6 @@
 import styles from './Comment.module.css';
 
 const Comment = ({ comment }) => {
-  console.log(comment);
   const user = comment.user;
   const text = comment.comment;
   return (

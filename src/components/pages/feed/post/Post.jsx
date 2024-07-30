@@ -10,7 +10,7 @@ import ActionButton from '../../../ui/ActionButton/ActionButton';
 // Import CSS
 import styles from './Post.module.css';
 import { useState } from 'react';
-import Comment from '../comment/Comment';
+import Comment from '../comments/comment/Comment';
 
 const Post = ({ post }) => {
   const creator = {
