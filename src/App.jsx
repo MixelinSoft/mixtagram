@@ -9,13 +9,6 @@ import Main from './components/layout/main/Main';
 import styles from './App.module.css';
 
 function App() {
-  // Create Navigation Function
-  const navigate = useNavigate();
-  // Redirect to Feed on Startup
-  useEffect(() => {
-    navigate('/feed/');
-  }, [navigate]);
-
   return (
     <div className={styles.app}>
       <Header />

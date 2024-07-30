@@ -1,14 +1,22 @@
 // Import CSS
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import Feed from '../../pages/feed/Feed';
 import styles from './Main.module.css';
+import Comments from '../../pages/feed/comments/comments/Comments';
+import { useEffect } from 'react';
 
 const Main = (props) => {
+  // Create Navigation Function
+  const navigate = useNavigate();
+  // Redirect to Feed on Startup
+  useEffect(() => {
+    navigate('/feed/');
+  }, []);
   return (
     <main className={styles.main}>
       <Routes>
         <Route path='/feed' element={<Feed />} />
-        {/* Здесь можно добавить другие маршруты */}
+        <Route path='/feed/:postId/comments/' element={<Comments />} />
       </Routes>
     </main>
   );

@@ -11,6 +11,7 @@ import ActionButton from '../../../ui/ActionButton/ActionButton';
 import styles from './Post.module.css';
 import { useState } from 'react';
 import Comment from '../comments/comment/Comment';
+import { Link } from 'react-router-dom';
 
 const Post = ({ post }) => {
   const creator = {
@@ -119,6 +120,7 @@ const Post = ({ post }) => {
           <div className={styles.numberOfLikes}>{likes.numberOfLikes}</div>
           <div className={styles.likeText}>Отметок "Нравится"</div>
         </div>
+
         <div className={styles.description}>
           <div className={styles.creatorInfo}>
             <span className={styles.creatorName}>{creator.creatorName}</span>
@@ -128,10 +130,14 @@ const Post = ({ post }) => {
             <span className={styles.descriptionText}>{postDescription}</span>
           </div>
         </div>
-        <div className={styles.comments}>
-          {postComments &&
-            postComments.map((comment) => <Comment comment={comment} />)}
-        </div>
+
+        <Link to={`/feed/${post.post.id}/comments`} className={styles.comments}>
+          {postComments && (
+            <span>Посмотреть все комментарии ({postComments.length}) </span>
+          )}
+          {/* {postComments &&
+            postComments.map((comment) => <Comment comment={comment} />)} */}
+        </Link>
         <div className={styles.timeStamp}></div>
       </div>
     </div>
