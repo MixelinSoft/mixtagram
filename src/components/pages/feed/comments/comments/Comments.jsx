@@ -4,12 +4,17 @@ import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import Comment from '../comment/Comment';
 
+// Import CSS
+import styles from './Comments.module.css';
+
 const Comments = (props) => {
   // Create Navigate Function
   const navigate = useNavigate();
   const [post, setPost] = useState(null);
   // Get PostId from URL
   const { postId } = useParams();
+  const user = useSelector((state) => state.feed.posts[0].user);
+  console.log(user);
   // Get the post from Redux Store
   const posts = useSelector((state) => state.feed.posts);
 
@@ -22,9 +27,35 @@ const Comments = (props) => {
   }, [posts, navigate, setPost]);
 
   return (
-    <div>
-      {post && <div>{post.description}</div>}
-      {post && post.comments.map((comment) => <Comment comment={comment} />)}
+    <div className={styles.container}>
+      {user && (
+        <div className={styles.creator}>
+          <div className={styles.creatorPhoto}>
+            <img
+              src={user.userPhoto}
+              alt='userPhoto'
+              width='32px'
+              height='32px'
+            />
+          </div>
+          <div className={styles.creatorInfo}>
+            <span className={styles.userName}>{user.userName}</span>
+            {post && (
+              <span className={styles.description}>{post.description}</span>
+            )}
+            <div className={styles.actions}>
+              <div className={styles.timeStamp}>2 нед.</div>
+              <div className={styles.translate}>Показать перевод</div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div className={styles.line}></div>
+
+      <div className={styles.comments}>
+        {post && post.comments.map((comment) => <Comment comment={comment} />)}
+      </div>
     </div>
   );
 };
