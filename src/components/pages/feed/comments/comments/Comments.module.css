@@ -37,7 +37,7 @@
 .timeStamp {
   margin-right: 6px;
 
-  color: rgba(128, 128, 128, 1);
+  color: rgb(142, 142, 142);
 }
 .translate {
   font-weight: 800;
@@ -48,5 +48,5 @@
   height: 1px;
 
   margin-bottom: 12px;
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(128, 128, 128, 0.3);
 }
