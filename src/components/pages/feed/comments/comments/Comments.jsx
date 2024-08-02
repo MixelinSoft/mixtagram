@@ -6,6 +6,7 @@ import Comment from '../comment/Comment';
 
 // Import CSS
 import styles from './Comments.module.css';
+import AddComment from '../addComment/AddComment';
 
 const Comments = (props) => {
   // Create Navigate Function
@@ -59,6 +60,7 @@ const Comments = (props) => {
       <div className={styles.comments}>
         {post && post.comments.map((comment) => <Comment comment={comment} />)}
       </div>
+      <AddComment userPhoto={user && user.userPhoto} />
     </div>
   );
 };

@@ -1,0 +1,56 @@
+.container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 48px;
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  width: 100%;
+  height: 80px;
+
+  padding: 0 12px;
+
+  background-color: white;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.userPhoto {
+  min-width: 32px;
+  height: 32px;
+
+  margin-right: 6px;
+  border: 1px solid black;
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  min-height: 1rem;
+
+  margin-right: 6px;
+
+  border: none;
+
+  font-size: 12px;
+
+  outline: none;
+}
+
+.button {
+  color: #0095f6;
+
+  font-size: 11px;
+  font-weight: 800;
+}
