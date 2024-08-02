@@ -10,14 +10,17 @@ import styles from './Comments.module.css';
 const Comments = (props) => {
   // Create Navigate Function
   const navigate = useNavigate();
+  // Create PostState
   const [post, setPost] = useState(null);
   // Get PostId from URL
   const { postId } = useParams();
-  const user = useSelector((state) => state.feed.posts[0].user);
-  console.log(user);
+  // Get User From Store
+  const user = useSelector(
+    (state) => state.feed.posts && state.feed.posts[0].user,
+  );
   // Get the post from Redux Store
   const posts = useSelector((state) => state.feed.posts);
-
+  // If Post Not Exist - Redirect to Feed
   useEffect(() => {
     if (posts) {
       setPost(posts.find((post) => post.post.id === +postId).post);

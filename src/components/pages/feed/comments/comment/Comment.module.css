@@ -60,7 +60,8 @@
   display: flex;
   align-items: center;
 
-  width: 44px;
+  width: 12px;
+  height: 12px;
 
   color: rgb(142, 142, 142);
 }
