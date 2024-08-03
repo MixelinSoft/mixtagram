@@ -3,13 +3,13 @@
 }
 
 .header {
-  height: 56px;
-
-  padding: 0 12px 0 12px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  height: 56px;
+
+  padding: 0 12px 0 12px;
 }
 
 .info {
@@ -41,11 +41,6 @@
   font-weight: 800;
 }
 
-.creatorVerificated {
-  margin-right: 4px;
-  color: steelblue;
-}
-
 .image {
   min-height: 200px;
 }
@@ -62,6 +57,10 @@
   height: 40px;
 }
 
+.actionButton {
+  margin-right: 6px;
+}
+
 .likes {
   display: flex;
   align-items: center;
@@ -75,18 +74,31 @@
 }
 
 .lastLikedProfile {
+  display: flex;
+  align-items: center;
+
   height: 14px;
   width: 14px;
-  margin-right: 4px;
+  margin-left: -6px;
 
-  border: 1px solid grey;
+  border: 1px solid white;
   border-radius: 50%;
 
   overflow: hidden;
+
+  z-index: 1;
+}
+
+.lastLikedProfile:first-child {
+  margin-left: 0; /* Убираем смещение у первого элемента */
 }
 
 .numberOfLikes {
   margin-right: 4px;
+}
+
+.description {
+  margin-bottom: 6px;
 }
 
 .descriptionText {
@@ -97,4 +109,30 @@
 .comments {
   margin-top: 8px;
   color: grey;
+}
+
+.creatorVerificated {
+  margin-right: 6px;
+}
+
+.likesUsers {
+  display: flex;
+}
+
+.underPost {
+  display: flex;
+  align-items: center;
+
+  margin-top: 6px;
+
+  font-size: 11px;
+}
+
+.timeStamp {
+  margin-right: 6px;
+  color: grey;
+}
+
+.translate {
+  font-weight: 800;
 }

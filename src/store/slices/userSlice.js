@@ -13,7 +13,6 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     setUser(state, { payload }) {
-      console.log(payload);
       state.userName = payload.userName;
       state.userPhoto = payload.userPhoto;
       state.userId = payload.userId;

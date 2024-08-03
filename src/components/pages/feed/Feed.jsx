@@ -1,19 +1,30 @@
+// Import Hooks
 import { useEffect } from 'react';
-import getPosts from '../../../services/getPosts';
-import Post from './post/Post';
 import { useDispatch, useSelector } from 'react-redux';
+// Import Components
+import Post from './post/Post';
+// Import Functions
+import getFeed from '../../../services/getFeed';
 
-const Feed = (props) => {
+const Feed = () => {
   // Create Dispatch Function
   const dispatchAction = useDispatch();
   // Get Posts From Store
   const posts = useSelector((state) => state.feed.posts);
-  // Get Posts From Server
+  // Get Feed From Server
   useEffect(() => {
-    dispatchAction(getPosts());
-  }, [dispatchAction]);
+    if (posts.length === 0) {
+      dispatchAction(getFeed());
+    }
+  }, [posts, dispatchAction, getFeed]);
 
-  return <div>{posts && posts.map((post) => <Post post={post} />)}</div>;
+  return (
+    <>
+      {posts &&
+        posts.length > 0 &&
+        posts.map((post) => <Post key={post.post.postId} post={post} />)}
+    </>
+  );
 };
 
 export default Feed;

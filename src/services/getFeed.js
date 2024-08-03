@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { feedActions } from '../store/slices/feedSlice';
 
-const getPosts = () => {
+const getFeed = () => {
   return async (dispatch) => {
     const url =
-      'https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/posts.json';
+      'https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/feed.json';
     try {
       const response = await axios.get(url);
       dispatch(feedActions.setPosts(response.data));
@@ -14,4 +14,4 @@ const getPosts = () => {
   };
 };
 
-export default getPosts;
+export default getFeed;
