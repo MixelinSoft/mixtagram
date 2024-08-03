@@ -14,8 +14,7 @@ const Header = () => {
   // Get Location From URL
   const location = useLocation();
   // Get User  From Store
-  const user = useSelector((state) => state.feed);
-  console.log(user);
+  const user = useSelector((state) => state.user);
   // Return Header
   if (location.pathname === '/feed/') {
     return (

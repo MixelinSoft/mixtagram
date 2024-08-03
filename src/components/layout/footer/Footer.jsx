@@ -9,12 +9,15 @@ import { RiMessengerLine } from 'react-icons/ri';
 // Import CSS
 import styles from './Footer.module.css';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Footer = () => {
   // Get Location
   const location = useLocation();
   // Create Navigation Function
   const navigate = useNavigate();
+  // Get User From Store
+  const user = useSelector((state) => state.user);
 
   // Navigation Handler
   const navigateHandler = (path) => {
@@ -108,12 +111,7 @@ const Footer = () => {
 
       <ActionButton>
         <div className={styles.profile}>
-          <img
-            src={profileImage}
-            width='24px'
-            height='24px'
-            // alt='cat'
-          />
+          <img src={user.userPhoto} width='24px' height='24px' />
         </div>
       </ActionButton>
     </div>
