@@ -39,3 +39,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.directHeader {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.user {
+  font-size: 18px;
+  font-weight: 800;
+}

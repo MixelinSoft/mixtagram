@@ -4,6 +4,7 @@ import Feed from '../../pages/feed/Feed';
 import styles from './Main.module.css';
 import Comments from '../../pages/feed/comments/comments/Comments';
 import { useEffect } from 'react';
+import Messenger from '../../pages/messenger/Messenger';
 
 const Main = (props) => {
   // Create Navigation Function
@@ -16,6 +17,7 @@ const Main = (props) => {
     <main className={styles.main}>
       <Routes>
         <Route path='/feed' element={<Feed />} />
+        <Route path='/direct/' element={<Messenger />} />
         <Route path='/feed/:postId/comments/' element={<Comments />} />
       </Routes>
     </main>

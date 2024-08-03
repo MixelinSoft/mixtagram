@@ -102,7 +102,7 @@ const Footer = () => {
         </svg>
       </ActionButton>
 
-      <ActionButton>
+      <ActionButton onClick={() => navigateHandler('/direct/')}>
         <RiMessengerLine />
       </ActionButton>
 
