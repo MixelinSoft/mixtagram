@@ -1,0 +1,27 @@
+[
+  {
+    "userName": "MarsCuteCat",
+    "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/MarsCuteCat/profileImage.webp",
+    "userId": "mar777"
+  },
+  {
+    "userName": "BallLoverPhill",
+    "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/BallLoverPhill/profileImage.webp",
+    "userId": "fil123"
+  },
+  {
+    "userName": "Boris_ROCKSTAR",
+    "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/Boris_ROCKSTAR/profileImage.webp",
+    "userId": "bor354"
+  },
+  {
+    "userName": "Tobik_Mad_Dog",
+    "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/Tobik_Mad_Dog/profileImage.webp",
+    "userId": "tob733"
+  },
+  {
+    "userName": "ZinaSuperMom",
+    "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/ZinaSuperMom/profileImage.webp",
+    "userId": "zin553"
+  }
+]

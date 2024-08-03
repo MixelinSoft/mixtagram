@@ -1,8 +1,5 @@
 import ActionButton from '../../ui/ActionButton/ActionButton';
 
-// Import Profile Image
-import profileImage from '../../../assets/images/profile/profileImage.webp';
-
 // Import Icons
 import { FiSearch } from 'react-icons/fi';
 import { RiMessengerLine } from 'react-icons/ri';
