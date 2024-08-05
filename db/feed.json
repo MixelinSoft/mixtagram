@@ -42,5 +42,58 @@
         }
       }
     ]
+  },
+  {
+    "creatorId": "mar777",
+    "post": {
+      "postImages": [
+        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img002.jpg"
+      ],
+      "postId": "234441",
+      "postDescription": "Нашёл баг на улице",
+      "postTimeStamp": "1 день назад",
+      "postLikes": {
+        "lastLikedUsers": ["hbx687", "zin553", "bor354"],
+        "numberOfLikes": 823
+      }
+    },
+    "comments": [
+      {
+        "commentId": "522350",
+        "userId": "fil123",
+        "commentText": "Какой милый баг! Надеюсь, он не приносит вреда.",
+        "commentTimeStamp": "1 день назад",
+        "likes": {
+          "numberOfLikes": 443
+        }
+      },
+      {
+        "commentId": "692983",
+        "userId": "tob733",
+        "commentText": "Что это за ошибка? Надеюсь, она не критическая!",
+        "commentTimeStamp": "1 день назад",
+        "likes": {
+          "numberOfLikes": 334
+        }
+      },
+      {
+        "commentId": "23332",
+        "userId": "bor354",
+        "commentText": "Вот это да! Интересно, сколько таких багов в природе?",
+        "commentTimeStamp": "20 часов назад",
+        "likes": {
+          "numberOfLikes": 233
+        }
+      },
+      {
+        "commentId": "466642",
+        "userId": "hbx687",
+        "commentText": "Интересно, где ты его нашёл? Вижу, это не обычный случай!",
+        "commentTimeStamp": "10 часов назад",
+        "likes": {
+          "numberOfLikes": 98
+        }
+      }
+    ]
   }
 ]
