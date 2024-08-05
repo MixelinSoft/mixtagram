@@ -168,7 +168,7 @@ const Post = ({ post }) => {
           </div>
         )}
 
-        {post && (
+        {post && creator && (
           <div className={styles.description}>
             <div className={styles.creatorInfo}>
               <span className={styles.creatorName}>{creator.userName}</span>
