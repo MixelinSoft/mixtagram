@@ -74,7 +74,11 @@ const Post = ({ post }) => {
 
       {post && (
         <div className={styles.image}>
-          <Swiper pagination={true} modules={[Pagination, Navigation]}>
+          <Swiper
+            pagination={true}
+            autoHeight
+            modules={[Pagination, Navigation]}
+          >
             {post.post.postImages.map((image) => (
               <SwiperSlide key={image}>
                 <LazyLoadImage
