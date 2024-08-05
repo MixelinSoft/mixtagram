@@ -35,4 +35,10 @@
     "userId": "vas999",
     "isVerificated": false
   }
+  {
+    "userName": "HomebodyX",
+    "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/HomebodyX/profileImage.webp",
+    "userId": "hbx687",
+    "isVerificated": true
+  }
 ]

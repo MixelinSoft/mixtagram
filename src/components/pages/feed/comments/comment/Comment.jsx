@@ -1,8 +1,15 @@
+import { useSelector } from 'react-redux';
 import styles from './Comment.module.css';
 
 const Comment = ({ comment }) => {
-  const user = comment.user;
-  const text = comment.comment;
+  // Get Users From Store
+  const users = useSelector((state) => state.users.users);
+  // Find User in Users
+  const user = users.find((user) => {
+    if (user.userId === comment.userId) {
+      return user;
+    }
+  });
 
   return (
     <div className={styles.container}>
@@ -14,7 +21,7 @@ const Comment = ({ comment }) => {
           <div className={styles.text}>
             <div className={styles.textComment}>
               <span className={styles.userName}>{user.userName}</span>
-              <span>{text}</span>
+              <span>{comment.commentText}</span>
             </div>
             <div className={styles.likeButton}>
               <svg
@@ -29,8 +36,10 @@ const Comment = ({ comment }) => {
             </div>
           </div>
           <div className={styles.actions}>
-            <div className={styles.timeStamp}>2 нед.</div>
-            <div className={styles.likes}>Отметки "Нравится": 6</div>
+            <div className={styles.timeStamp}>{comment.commentTimeStamp}</div>
+            <div className={styles.likes}>
+              Отметки "Нравится": {comment.likes.numberOfLikes}
+            </div>
             <div className={styles.answer}>Ответить</div>
             <div className={styles.translate}>Показать перевод</div>
           </div>
