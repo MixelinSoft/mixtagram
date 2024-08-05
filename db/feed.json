@@ -165,58 +165,49 @@
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/feed/img004.jpg",
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/feed/img005.jpg"
       ],
-      "postId": "622234",
-      "postDescription": "Созерцаю мир с высоты. Глубокие мысли посещают меня в этот момент.",
-      "postTimeStamp": "2 дня назад",
+      "postId": "334553",
+      "postDescription": "С высоты птичьего полета все проблемы кажутся такими мелкими. Сижу тут, размышляю о смысле кошачьей жизни. Может, люди тоже когда-то лазили по деревьям? Или это только мы, коты, такие продвинутые?",
+      "postTimeStamp": "3 дня назад",
       "postLikes": {
         "lastLikedUsers": ["zin553", "bor354", "vas999"],
-        "numberOfLikes": 1651
+        "numberOfLikes": 2003
       }
     },
     "comments": [
       {
         "commentId": "853938",
-        "userId": "hbx687",
-        "commentText": "Потрясающе! Этот вид действительно заставляет задуматься о жизни.",
-        "commentTimeStamp": "2 дня назад",
+        "userId": "fil123",
+        "commentText": "Невероятно, как многое может измениться, когда смотришь на мир с высоты!",
+        "commentTimeStamp": "3 дня назад",
         "likes": {
-          "numberOfLikes": 344
+          "numberOfLikes": 453
         }
       },
       {
-        "commentId": "573787",
-        "userId": "fil123",
-        "commentText": "Вау, как красиво! Очень вдохновляющая фотография.",
+        "commentId": "266443",
+        "userId": "vas999",
+        "commentText": "Думаю, что людям тоже было бы интересно увидеть мир с твоей высоты!",
+        "commentTimeStamp": "3 дня назад",
+        "likes": {
+          "numberOfLikes": 511
+        }
+      },
+      {
+        "commentId": "266204",
+        "userId": "tob733",
+        "commentText": "Что за высота? Сразу видно, что коты любят приключения!",
         "commentTimeStamp": "2 дня назад",
         "likes": {
           "numberOfLikes": 334
         }
       },
       {
-        "commentId": "847763",
-        "userId": "vas999",
-        "commentText": "Неплохо, но я предпочитаю вид из подворотни. Зато тут красиво.",
-        "commentTimeStamp": "2 дня назад",
-        "likes": {
-          "numberOfLikes": 339
-        }
-      },
-      {
         "commentId": "345456",
-        "userId": "bor354",
-        "commentText": "Эпично! Такое чувство, что можно увидеть весь мир отсюда.",
+        "userId": "zin553",
+        "commentText": "Какой замечательный вид! Приятно видеть, что ты наслаждаешься моментом.",
         "commentTimeStamp": "1 день назад",
         "likes": {
           "numberOfLikes": 98
-        }
-      },
-      {
-        "commentId": "245662",
-        "userId": "zin553",
-        "commentText": "Какой чудесный вид! Надеюсь, твои глубокие мысли приводят к хорошим результатам.",
-        "commentTimeStamp": "1 день назад",
-        "likes": {
-          "numberOfLikes": 87
         }
       }
     ]
