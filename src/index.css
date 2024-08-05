@@ -127,7 +127,12 @@ button {
   background-color: transparent;
   border: none;
 }
-
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ffffffc1;
+}
 @font-face {
   font-family: 'LogoFont';
   src: url('./assets/fonts/ChristmasBell.otf') format('opentype');

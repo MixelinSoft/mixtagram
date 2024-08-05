@@ -9,13 +9,20 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import ActionButton from '../../../ui/ActionButton/ActionButton';
 // Imoirt Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+// import required modules
+import { Navigation, Pagination } from 'swiper/modules';
 // Import CSS
 import styles from './Post.module.css';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Comment from '../comments/comment/Comment';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import VerificationImage from '../../../ui/VerificationImage/VerificationImage';
+import PostNavigationButton from '../../../ui/PostNavigationButton/PostNavigationButton';
 
 const Post = ({ post }) => {
   // Get Users From Store
@@ -30,8 +37,6 @@ const Post = ({ post }) => {
   const lastLikedUserPhotos = users
     .filter((user) => post.post.postLikes.lastLikedUsers.includes(user.userId))
     .map((user) => user.userPhoto);
-
-  console.log(post);
 
   return (
     <div className={styles.container}>
@@ -69,14 +74,18 @@ const Post = ({ post }) => {
 
       {post && (
         <div className={styles.image}>
-          {
-            <LazyLoadImage
-              src={post.post.postImages[0]}
-              alt='Post Image'
-              effect='blur'
-              width='100%'
-            />
-          }
+          <Swiper pagination={true} modules={[Pagination, Navigation]}>
+            {post.post.postImages.map((image) => (
+              <SwiperSlide key={image}>
+                <LazyLoadImage
+                  src={image}
+                  alt='Post Image'
+                  effect='blur'
+                  width='100%'
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       )}
       <div className={styles.info}>
