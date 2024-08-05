@@ -7,66 +7,6 @@
     },
     "post": {
       "images": [
-        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img003.jpg"
-      ],
-      "description": "Созерцаю мир с высоты. Глубокие мысли посещают меня в этот момент.",
-      "likes": {
-        "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
-        "numberOfLikes": 1651
-      },
-      "comments": [
-        {
-          "user": {
-            "userName": "HomebodyX",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/HomebodyX.webp",
-            "isVerificated": false
-          },
-          "comment": "Потрясающе! Этот вид действительно заставляет задуматься о жизни."
-        },
-        {
-          "user": {
-            "userName": "BallLoverPhill",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/BallLoverPhill.webp",
-            "isVerificated": true
-          },
-          "comment": "Вау, как красиво! Очень вдохновляющая фотография."
-        },
-        {
-          "user": {
-            "userName": "VasiliyPetrovich$StreetRuler",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/VasiliyPetrovich$StreetRuler.webp",
-            "isVerificated": false
-          },
-          "comment": "Неплохо, но я предпочитаю вид из подворотни. Зато тут красиво."
-        },
-        {
-          "user": {
-            "userName": "Boris_ROCKSTAR",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/Boris_ROCKSTAR.webp",
-            "isVerificated": false
-          },
-          "comment": "Эпично! Такое чувство, что можно увидеть весь мир отсюда."
-        },
-        {
-          "user": {
-            "userName": "ZinaSuperMom",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/ZinaSuperMom.webp",
-            "isVerificated": false
-          },
-          "comment": "Какой чудесный вид! Надеюсь, твои глубокие мысли приводят к хорошим результатам."
-        }
-      ],
-      "id": 560263
-    }
-  },
-  {
-    "user": {
-      "userName": "MarsCuteCat",
-      "isVerificated": true,
-      "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp"
-    },
-    "post": {
-      "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img004.jpg"
       ],
       "description": "Интересно, что там, за горизонтом? Может, там есть еще одно дерево, повыше?",
