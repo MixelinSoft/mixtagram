@@ -7,6 +7,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 // Import Components
 import ActionButton from '../../../ui/ActionButton/ActionButton';
+// Imoirt Swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import CSS
 import styles from './Post.module.css';
 import { useState } from 'react';
