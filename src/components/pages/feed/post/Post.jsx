@@ -31,6 +31,8 @@ const Post = ({ post }) => {
     .filter((user) => post.post.postLikes.lastLikedUsers.includes(user.userId))
     .map((user) => user.userPhoto);
 
+  console.log(post);
+
   return (
     <div className={styles.container}>
       {creator && (
@@ -67,14 +69,14 @@ const Post = ({ post }) => {
 
       {post && (
         <div className={styles.image}>
-          {post.post.postImages.length === 1 && (
+          {
             <LazyLoadImage
               src={post.post.postImages[0]}
               alt='Post Image'
               effect='blur'
               width='100%'
             />
-          )}
+          }
         </div>
       )}
       <div className={styles.info}>
