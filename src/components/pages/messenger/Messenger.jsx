@@ -1,6 +1,6 @@
 // Import Hooks
 import { useEffect } from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Outlet, Route, Routes, useNavigate } from 'react-router-dom';
 // Import Components
 import Inbox from './inbox/Inbox';
 // Import CSS
@@ -13,15 +13,6 @@ const Messenger = (props) => {
   useEffect(() => {
     navigate('/direct/inbox/');
   }, []);
-
-  return (
-    <div>
-      <div>lalalalalal</div>
-      <Routes>
-        
-      </Routes>
-    </div>
-  );
 };
 
 export default Messenger;
