@@ -4,7 +4,7 @@ import styles from './CommentsHeader.module.css';
 const CommentsHeader = (props) => {
   return (
     <header className={styles.header}>
-      <BackButton />
+      <BackButton variant='small' />
       <div className={styles.headerTitle}>Комментарии</div>
     </header>
   );
