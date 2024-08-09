@@ -7,50 +7,6 @@
     },
     "post": {
       "images": [
-        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img007.jpg"
-      ],
-      "description": "Я лежу так, чтобы было удобно наблюдать за всем происходящим. Иногда я даже представляю, что я лев, а этот пол - моя саванна.",
-      "likes": {
-        "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
-        "numberOfLikes": 1789
-      },
-      "comments": [
-        {
-          "user": {
-            "userName": "VasiliyPetrovich$StreetRuler",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/VasiliyPetrovich$StreetRuler.webp",
-            "isVerificated": true
-          },
-          "comment": "Лев и его саванна! Неплохо придумано. 😺"
-        },
-        {
-          "user": {
-            "userName": "ZinaSuperMom",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/ZinaSuperMom.webp",
-            "isVerificated": true
-          },
-          "comment": "Как приятно наблюдать за спокойствием и фантазией! Ты явно знаешь, как расслабиться."
-        },
-        {
-          "user": {
-            "userName": "Tobik_Mad_Dog",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/Tobik_Mad_Dog.webp",
-            "isVerificated": true
-          },
-          "comment": "Ох, я бы тоже хотел быть таким расслабленным. Но, увы, я слишком энергичный для этого!"
-        }
-      ],
-      "id": 582941
-    }
-  },
-  {
-    "user": {
-      "userName": "MarsCuteCat",
-      "isVerificated": true,
-      "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp"
-    },
-    "post": {
-      "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img008.jpg"
       ],
       "description": "Я - король этого леса!",
