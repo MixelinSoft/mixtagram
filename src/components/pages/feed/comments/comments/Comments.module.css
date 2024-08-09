@@ -25,6 +25,10 @@
 .userName {
   font-weight: 800;
 
+  margin-right: 4px;
+}
+
+.verificationImage {
   margin-right: 6px;
 }
 

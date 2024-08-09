@@ -1,6 +1,6 @@
 // Import Hooks
 import { useSelector } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Comment from '../comment/Comment';
 // Impoer Components
 import AddComment from '../addComment/AddComment';
@@ -9,8 +9,6 @@ import VerificationImage from '../../../../ui/VerificationImage/VerificationImag
 import styles from './Comments.module.css';
 
 const Comments = () => {
-  // Create Navigate Function
-  const navigate = useNavigate();
   // Get PostId from URL
   const { postId } = useParams();
   // Get User From Store
@@ -19,6 +17,8 @@ const Comments = () => {
   const posts = useSelector((state) => state.feed.posts);
   // Find Post in Posts
   const post = posts.find((post) => post.post.postId === postId);
+
+  console.log(creator);
 
   return (
     <div className={styles.container}>
@@ -34,7 +34,11 @@ const Comments = () => {
           </div>
           <div className={styles.creatorInfo}>
             <span className={styles.userName}>{creator.userName}</span>
-            {creator.isVerificated && <VerificationImage />}
+            {creator.isVerificated && (
+              <span className={styles.verificationImage}>
+                <VerificationImage />
+              </span>
+            )}
             {post && (
               <span className={styles.description}>
                 {post.post.postDescription}

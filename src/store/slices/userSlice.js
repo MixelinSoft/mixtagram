@@ -16,6 +16,7 @@ const userSlice = createSlice({
       state.userName = payload.userName;
       state.userPhoto = payload.userPhoto;
       state.userId = payload.userId;
+      state.isVerificated = payload.isVerificated;
     },
   },
 });

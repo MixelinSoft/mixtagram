@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import styles from './Comment.module.css';
+import VerificationImage from '../../../../ui/VerificationImage/VerificationImage';
 
 const Comment = ({ comment }) => {
   // Get Users From Store
@@ -21,6 +22,11 @@ const Comment = ({ comment }) => {
           <div className={styles.text}>
             <div className={styles.textComment}>
               <span className={styles.userName}>{user.userName}</span>
+              {user.isVerificated && (
+                <span className={styles.verificationImage}>
+                  <VerificationImage />
+                </span>
+              )}
               <span>{comment.commentText}</span>
             </div>
             <div className={styles.likeButton}>
