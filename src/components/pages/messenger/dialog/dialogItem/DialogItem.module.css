@@ -1,11 +1,13 @@
 .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+
   padding: 0 16px;
 
   height: 72px;
 
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .userPhoto {
@@ -20,6 +22,36 @@
   overflow: hidden;
 }
 
+.userNameMessage {
+  width: 100%;
+  max-width: calc(100% - 100px);
+}
+
 .lastMessage {
+  display: flex;
+
+  margin-top: 4px;
+  width: 100%;
   color: gray;
+}
+
+.message {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.timeStamp {
+  white-space: nowrap;
+}
+
+.muteIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 37px;
+  height: 100%;
+
+  color: grey;
 }

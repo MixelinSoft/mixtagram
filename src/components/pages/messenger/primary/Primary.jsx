@@ -6,7 +6,8 @@ const Primary = (props) => {
   const messages = [
     {
       dialogId: 'riowsx',
-      sender: 'tob733',
+      sender: 'fil123',
+      isMuted: false,
       messages: [
         {
           content: 'Добрый день!',
@@ -33,16 +34,21 @@ const Primary = (props) => {
           timestamp: '2024-08-09T14:00:00Z',
           isIncoming: true,
         },
+        {
+          content:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum amet error, illo distinctio laboriosam, eum doloremque eligendi similique non quae assumenda explicabo saepe, recusandae earum sed! Reprehenderit, molestias soluta?',
+          timestamp: '2024-08-09T14:00:00Z',
+          isIncoming: true,
+        },
       ],
     },
   ];
   return (
     <div>
       <Tabs currentTab='primary' />
-      <DialogItem dialog={messages[0]} />
-      <DialogItem dialog={messages[0]} />
-      <DialogItem dialog={messages[0]} />
-      <DialogItem dialog={messages[0]} />
+      {messages.map((dialog) => (
+        <DialogItem dialog={dialog} key={dialog.dialogId} />
+      ))}
     </div>
   );
 };
