@@ -38,7 +38,17 @@ const initialState = {
           content:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum amet error, illo distinctio laboriosam, eum doloremque eligendi similique non quae assumenda explicabo saepe, recusandae earum sed! Reprehenderit, molestias soluta?',
           timestamp: '2024-08-09T14:00:00Z',
-          isIncoming: true,
+          isIncoming: false,
+        },
+        {
+          content: '1',
+          timestamp: '2024-08-09T14:00:00Z',
+          isIncoming: false,
+        },
+        {
+          content: '2',
+          timestamp: '2024-08-09T14:00:00Z',
+          isIncoming: false,
         },
       ],
     },

@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+
+  padding: 2px 12px;
+
+  min-height: 30px;
+
+  width: 100%;
+}
+
+.userPhoto {
+  min-width: 28px;
+  height: 28px;
+
+  margin-right: 8px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+
+  min-height: 28px;
+  min-width: 28px;
+
+  padding: 8px;
+
+  font-size: 11px;
+
+  border-radius: 18px;
+  max-width: calc(100% - 120px);
+}
+
+.outcomingContainer {
+  justify-content: flex-end;
+}
+
+.incomingContainer {
+  justify-content: flex-start;
+}
+
+.incoming-first {
+  border-radius: 18px 18px 18px 4px;
+  background-color: #efefef;
+}
+
+.incoming-middle {
+  border-radius: 4px 18px 18px 4px;
+  background-color: #efefef;
+}
+
+.incoming-last {
+  border-radius: 4px 18px 18px 18px;
+  background-color: #efefef;
+}
+
+.incoming-single {
+  border-radius: 18px;
+  background-color: #efefef;
+}
+
+/* Пример стилей для исходящих сообщений */
+.outgoing-first {
+  border-radius: 18px 18px 4px 18px;
+  color: white;
+  background-color: #3797f0;
+}
+
+.outgoing-middle {
+  border-radius: 18px 4px 4px 18px;
+  color: white;
+  background-color: #3797f0;
+}
+
+.outgoing-last {
+  border-radius: 18px 4px 18px 18px;
+  color: white;
+  background-color: #3797f0;
+}
+
+.outgoing-single {
+  border-radius: 16px;
+  color: white;
+  background-color: #3797f0;
+}
