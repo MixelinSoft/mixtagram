@@ -8,6 +8,8 @@ import Messenger from '../../pages/messenger/Messenger';
 import Inbox from '../../pages/messenger/inbox/Inbox';
 import Requests from '../../pages/messenger/requests/Requests';
 import General from '../../pages/messenger/general/General';
+import { useSelector } from 'react-redux';
+import DialogContainer from '../../pages/messenger/dialog/dialogContainer/DialogContainer';
 
 const Main = (props) => {
   // Create Navigation Function
@@ -16,6 +18,8 @@ const Main = (props) => {
   useEffect(() => {
     navigate('/feed/');
   }, []);
+
+  const directDialogs = useSelector((state) => state.direct.primary);
   return (
     <main className={styles.main}>
       <Routes>
@@ -25,6 +29,15 @@ const Main = (props) => {
         <Route path='/direct/inbox/' element={<Inbox />} />
         <Route path='/direct/requests/' element={<Requests />} />
         <Route path='/direct/general/' element={<General />} />
+        {/* Create Routes For Dialogs */}
+        {directDialogs.length > 0 &&
+          directDialogs.map((dialog) => (
+            <Route
+              path={`/direct/inbox/${dialog.dialogId}`}
+              element={<DialogContainer dialog={dialog} />}
+              key={dialog.dialogId}
+            />
+          ))}
       </Routes>
     </main>
   );

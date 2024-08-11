@@ -25,6 +25,8 @@
 .userNameMessage {
   width: 100%;
   max-width: calc(100% - 100px);
+
+  color: black;
 }
 
 .lastMessage {
@@ -45,7 +47,7 @@
   white-space: nowrap;
 }
 
-.muteIcon {
+.statusIcon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,4 +56,11 @@
   height: 100%;
 
   color: grey;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  background-color: #0095f6;
+  border-radius: 50%;
 }
