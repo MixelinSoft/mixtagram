@@ -18,11 +18,13 @@ const DialogItem = (props) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.userPhoto}>
-        <img src={user.userPhoto} alt='' width='56px' height='56px' />
-      </div>
+      {user && (
+        <div className={styles.userPhoto}>
+          <img src={user.userPhoto} alt='' width='56px' height='56px' />
+        </div>
+      )}
       <div className={styles.userNameMessage}>
-        <div className={styles.userName}>{user.userName}</div>
+        {user && <div className={styles.userName}>{user.userName}</div>}
         <div className={styles.lastMessage}>
           {lastMessage.length > 24 ? 'long' : 'short'}
           <span className={styles.timeStamp}>{' · 51 нед.'}</span>

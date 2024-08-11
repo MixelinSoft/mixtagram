@@ -26,7 +26,11 @@ const Footer = () => {
   };
 
   return (
-    <div className={styles.footer}>
+    <div
+      className={`${styles.footer} ${
+        location.pathname.includes('/direct/') && styles.hide
+      }`}
+    >
       <ActionButton onClick={() => navigateHandler('/feed/')}>
         <svg
           height='24'
