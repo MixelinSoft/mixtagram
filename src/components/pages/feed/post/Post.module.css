@@ -61,6 +61,11 @@
   margin-right: 6px;
 }
 
+.mainActions {
+  display: flex;
+  align-items: center;
+}
+
 .likes {
   display: flex;
   align-items: center;

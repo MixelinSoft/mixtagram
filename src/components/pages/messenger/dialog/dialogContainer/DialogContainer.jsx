@@ -16,9 +16,10 @@ const DialogContainer = (props) => {
   const messages = props.dialog.messages;
 
   return (
-    <div>
+    <div className={styles.container}>
       {messages.map((message, index) => (
         <Message
+          key={message.messageId}
           position={getMessagePosition(messages, index)}
           content={message.content}
           user={interlocutor}
