@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+
+  height: 72px;
+
+  font-size: 14px;
+}
+
+.userPhoto {
+  min-width: 56px;
+  height: 56px;
+
+  margin-right: 8px;
+
+  border: 1px solid grey;
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+.lastMessage {
+  color: gray;
+}
