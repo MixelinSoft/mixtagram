@@ -12,6 +12,7 @@ import FeedHeader from './feedHeader/FeedHeader';
 import CommentsHeader from './commentsHeader/CommentsHeader';
 import DirectHeader from './directHeader/DirectHeader';
 import RequestsHeader from './requestsHeader/RequestsHeader';
+import InboxHeader from './inboxHeader/InboxHeader';
 
 const Header = () => {
   // Get Location From URL
@@ -30,6 +31,8 @@ const Header = () => {
     return <DirectHeader />;
   } else if (location.pathname === '/direct/requests') {
     return <RequestsHeader />;
+  } else if (location.pathname.includes('/inbox/')) {
+    return <InboxHeader dialog={location.pathname.slice(-6)} />;
   }
 };
 
