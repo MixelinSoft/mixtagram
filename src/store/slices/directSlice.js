@@ -126,8 +126,8 @@ const directSlice = createSlice({
       currentDialog.messages.push({
         messageId: Math.floor(100000 + Math.random() * 900000).toString(),
         content: payload.content,
-        timestamp: '2024-08-09T14:14:00Z',
-        isIncoming: false,
+        timestamp: '2024',
+        isIncoming: payload.isIncoming,
       });
     },
   },

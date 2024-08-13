@@ -5,6 +5,7 @@ import Message from '../message/Message';
 import { getMessagePosition } from '../../../../../utils/getMessagePosition';
 import { directActions } from '../../../../../store/slices/directSlice';
 import { useEffect, useRef } from 'react';
+import { getAnimalResponse } from '../../../../../utils/chatBot';
 
 const DialogContainer = (props) => {
   // Create Dispatch Function
@@ -24,8 +25,21 @@ const DialogContainer = (props) => {
 
   const sendMessage = (content) => {
     dispatchAction(
-      directActions.sendMessage({ dialogId: props.dialog.dialogId, content }),
+      directActions.sendMessage({
+        dialogId: props.dialog.dialogId,
+        content,
+        isIncoming: false,
+      }),
     );
+    getAnimalResponse(interlocutor.animal, (response) => {
+      dispatchAction(
+        directActions.sendMessage({
+          dialogId: props.dialog.dialogId,
+          content: response,
+          isIncoming: true,
+        }),
+      );
+    });
   };
 
   useEffect(() => {
