@@ -12,7 +12,8 @@ const MessageForm = (props) => {
   // Send Message
   const sendMessageHandler = (e) => {
     e.preventDefault();
-    console.log(inputText);
+    props.onSendMessage(inputText);
+    setInputText('');
   };
 
   return (

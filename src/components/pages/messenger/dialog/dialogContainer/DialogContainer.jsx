@@ -1,10 +1,14 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import MessageForm from '../messageForm/MessageForm';
 import styles from './DialogContainer.module.css';
 import Message from '../message/Message';
 import { getMessagePosition } from '../../../../../utils/getMessagePosition';
+import { directActions } from '../../../../../store/slices/directSlice';
+import { useEffect, useRef } from 'react';
 
 const DialogContainer = (props) => {
+  // Create Dispatch Function
+  const dispatchAction = useDispatch();
   // Get Users From Store
   const users = useSelector((state) => state.users.users);
   // Find Interlocutor in Users
@@ -14,6 +18,19 @@ const DialogContainer = (props) => {
     }
   });
   const messages = props.dialog.messages;
+
+  // Create MessagesEnd Ref
+  const messagesEndRef = useRef(null);
+
+  const sendMessage = (content) => {
+    dispatchAction(
+      directActions.sendMessage({ dialogId: props.dialog.dialogId, content }),
+    );
+  };
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
 
   return (
     <div className={styles.container}>
@@ -26,7 +43,8 @@ const DialogContainer = (props) => {
           isIncoming={message.isIncoming}
         />
       ))}
-      <MessageForm />
+      <div ref={messagesEndRef} />
+      <MessageForm onSendMessage={sendMessage} />
     </div>
   );
 };

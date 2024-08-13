@@ -116,8 +116,19 @@ const directSlice = createSlice({
   name: 'direct',
   initialState,
   reducers: {
-    setPosts(state, { payload }) {
-      state.posts = payload;
+    setPosts(state, { payload }) {},
+    sendMessage(state, { payload }) {
+      const currentDialog = state.primary.find((dialog) => {
+        if (dialog.dialogId === payload.dialogId) {
+          return dialog;
+        }
+      });
+      currentDialog.messages.push({
+        messageId: Math.floor(100000 + Math.random() * 900000).toString(),
+        content: payload.content,
+        timestamp: '2024-08-09T14:14:00Z',
+        isIncoming: false,
+      });
     },
   },
 });
