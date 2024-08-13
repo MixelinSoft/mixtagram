@@ -7,50 +7,6 @@
     },
     "post": {
       "images": [
-        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img008.jpg"
-      ],
-      "description": "Я - король этого леса!",
-      "likes": {
-        "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
-        "numberOfLikes": 1623
-      },
-      "comments": [
-        {
-          "user": {
-            "userName": "HomebodyX",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/HomebodyX.webp",
-            "isVerificated": true
-          },
-          "comment": "Вау, настоящая королевская поза! 👑"
-        },
-        {
-          "user": {
-            "userName": "BallLoverPhil",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/BallLoverPhil.webp",
-            "isVerificated": true
-          },
-          "comment": "Да, ты определённо выглядишь как король! 🐾"
-        },
-        {
-          "user": {
-            "userName": "ZinaSuperMom",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/ZinaSuperMom.webp",
-            "isVerificated": true
-          },
-          "comment": "Твоя уверенность вдохновляет! 👑💪"
-        }
-      ],
-      "id": 375949
-    }
-  },
-  {
-    "user": {
-      "userName": "MarsCuteCat",
-      "isVerificated": true,
-      "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp"
-    },
-    "post": {
-      "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img009.jpg"
       ],
       "description": "Жизнь прекрасна, когда ты - король своего маленького мира.",
