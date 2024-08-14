@@ -14,12 +14,13 @@ import DialogContainer from '../../pages/messenger/dialog/dialogContainer/Dialog
 const Main = (props) => {
   // Create Navigation Function
   const navigate = useNavigate();
+  // Get Dialogs From Store
+  const directDialogs = useSelector((state) => state.direct.primary);
   // Redirect to Feed on Load App
   useEffect(() => {
     navigate('/feed/');
   }, []);
 
-  const directDialogs = useSelector((state) => state.direct.primary);
   return (
     <main className={styles.main}>
       <Routes>
@@ -30,10 +31,11 @@ const Main = (props) => {
         <Route path='/direct/requests/' element={<Requests />} />
         <Route path='/direct/general/' element={<General />} />
         {/* Create Routes For Dialogs */}
-        {directDialogs.length > 0 &&
+        {directDialogs &&
+          directDialogs.length > 0 &&
           directDialogs.map((dialog) => (
             <Route
-              path={`/direct/inbox/${dialog.dialogId}`}
+              path={`/direct/inbox/${dialog.dialogId}/`}
               element={<DialogContainer dialog={dialog} />}
               key={dialog.dialogId}
             />

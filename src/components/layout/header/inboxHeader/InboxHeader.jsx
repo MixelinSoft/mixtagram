@@ -10,21 +10,15 @@ const InboxHeader = (props) => {
   // Get Users From Store
   const users = useSelector((state) => state.users.users);
 
-  const dialog = dialogs.find((dialog) => {
-    if (dialog.dialogId === props.dialog) {
-      return dialog;
-    }
-  });
+  // Find the correct dialog based on dialogId
+  const dialog = dialogs.find((dialog) => dialog.dialogId === props.dialog);
 
-  const user = users.find((user) => {
-    if (user.userId === dialog.sender) {
-      return user;
-    }
-  });
+  // Find the user based on dialog's sender ID
+  const user = users.find((user) => user.userId === dialog?.sender);
 
   return (
     <header className={styles.header}>
-      {user && (
+      {user && dialog && (
         <div className={styles.userInfo}>
           <BackButton variant='full' />
           <div className={styles.userPhoto}>

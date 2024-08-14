@@ -103,7 +103,7 @@
     ]
   },
   {
-    "dialogId": "marsxchat",
+    "dialogId": "marsxc",
     "sender": "hbx687",
     "isMuted": false,
     "messages": [
@@ -212,7 +212,7 @@
     ]
   },
   {
-    "dialogId": "marsborischat",
+    "dialogId": "marsbo",
     "sender": "bor354",
     "isMuted": false,
     "messages": [
