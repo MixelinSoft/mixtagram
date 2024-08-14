@@ -1,5 +1,3 @@
-// Import Icon
-import { IoIosArrowDown } from 'react-icons/io';
 // Import CSS
 import styles from './Logo.module.css';
 const Logo = () => {

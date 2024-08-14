@@ -13,7 +13,9 @@ const MessageForm = (props) => {
   // Send Message
   const sendMessageHandler = (e) => {
     e.preventDefault();
-    props.onSendMessage(inputText);
+    if (inputText.trim()) {
+      props.onSendMessage(inputText);
+    }
     setInputText('');
   };
 

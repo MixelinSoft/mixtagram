@@ -1,8 +1,4 @@
 import ActionButton from '../../ui/ActionButton/ActionButton';
-
-// Import Icons
-import { FiSearch } from 'react-icons/fi';
-import { RiMessengerLine } from 'react-icons/ri';
 // Import CSS
 import styles from './Footer.module.css';
 import { useLocation, useNavigate } from 'react-router-dom';

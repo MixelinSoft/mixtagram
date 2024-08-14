@@ -1,8 +1,5 @@
 // Import Components
 import ActionButton from '../../ui/ActionButton/ActionButton';
-// Import Icons
-import { TbSquareRoundedPlus } from 'react-icons/tb';
-import { FaRegHeart } from 'react-icons/fa';
 // Import CSS
 import styles from './Header.module.css';
 import { useLocation } from 'react-router-dom';
