@@ -7,50 +7,6 @@
     },
     "post": {
       "images": [
-        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img009.jpg"
-      ],
-      "description": "Жизнь прекрасна, когда ты - король своего маленького мира.",
-      "likes": {
-        "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
-        "numberOfLikes": 1158
-      },
-      "comments": [
-        {
-          "user": {
-            "userName": "VasiliyPetrovich$StreetRuler",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/VasiliyPetrovich$StreetRuler.webp",
-            "isVerificated": true
-          },
-          "comment": "Вот это уверенность! Живи как король! 👑"
-        },
-        {
-          "user": {
-            "userName": "HomebodyX",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/HomebodyX.webp",
-            "isVerificated": true
-          },
-          "comment": "Согласен, наслаждайся своим маленьким миром! 🌟"
-        },
-        {
-          "user": {
-            "userName": "Tobik_Mad_Dog",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/Tobik_Mad_Dog.webp",
-            "isVerificated": true
-          },
-          "comment": "Интересный взгляд на жизнь, король! 🐕"
-        }
-      ],
-      "id": 500912
-    }
-  },
-  {
-    "user": {
-      "userName": "MarsCuteCat",
-      "isVerificated": true,
-      "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp"
-    },
-    "post": {
-      "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img010.jpg"
       ],
       "description": "Быть или не быть на дереве? Вот в чем вопрос. Но, честно говоря, мне здесь очень нравится.",

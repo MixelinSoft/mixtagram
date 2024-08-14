@@ -343,5 +343,49 @@
         }
       }
     ]
+  },
+  {
+    "creatorId": "mar777",
+    "post": {
+      "postImages": [
+        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/feed/img009.jpg"
+      ],
+      "postId": "579029",
+      "postDescription": "Жизнь прекрасна, когда ты - король своего маленького мира.",
+      "postTimeStamp": "7 дней назад",
+      "postLikes": {
+        "lastLikedUsers": ["tob733", "hbx687", "vas999"],
+        "numberOfLikes": 1476
+      }
+    },
+    "comments": [
+      {
+        "commentId": "vbe94ug",
+        "userId": "vas999",
+        "commentText": "Вот это уверенность! Живи как король! 👑",
+        "commentTimeStamp": "7 дней назад",
+        "likes": {
+          "numberOfLikes": 342
+        }
+      },
+      {
+        "commentId": "kw95nm",
+        "userId": "hbx687",
+        "commentText": "Согласен, наслаждайся своим маленьким миром! 🌟",
+        "commentTimeStamp": "7 дней назад",
+        "likes": {
+          "numberOfLikes": 366
+        }
+      },
+      {
+        "commentId": "oio95yu",
+        "userId": "tob733",
+        "commentText": "Интересный взгляд на жизнь, король! 🐕",
+        "commentTimeStamp": "6 дней назад",
+        "likes": {
+          "numberOfLikes": 359
+        }
+      }
+    ]
   }
 ]
