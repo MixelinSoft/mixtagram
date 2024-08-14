@@ -18,8 +18,6 @@ const Comments = () => {
   // Find Post in Posts
   const post = posts.find((post) => post.post.postId === postId);
 
-  console.log(creator);
-
   return (
     <div className={styles.container}>
       {creator && (

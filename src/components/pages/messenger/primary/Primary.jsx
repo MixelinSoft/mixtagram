@@ -12,7 +12,9 @@ const Primary = (props) => {
   useEffect(() => {
     dispatchAction(getDirect());
   }, []);
+  // Get Messages From Store
   const messages = useSelector((state) => state.direct.primary);
+
   return (
     <div>
       <Tabs currentTab='primary' />
