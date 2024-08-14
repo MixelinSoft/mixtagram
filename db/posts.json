@@ -7,50 +7,6 @@
     },
     "post": {
       "images": [
-        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img010.jpg"
-      ],
-      "description": "Быть или не быть на дереве? Вот в чем вопрос. Но, честно говоря, мне здесь очень нравится.",
-      "likes": {
-        "lastLiked": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp",
-        "numberOfLikes": 901
-      },
-      "comments": [
-        {
-          "user": {
-            "userName": "BallLoverPhill",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/BallLoverPhill.webp",
-            "isVerificated": true
-          },
-          "comment": "Согласен, деревья - это отличный выбор для отдыха!"
-        },
-        {
-          "user": {
-            "userName": "HomebodyX",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/HomebodyX.webp",
-            "isVerificated": true
-          },
-          "comment": "Кошачье счастье в полном объёме! 😺"
-        },
-        {
-          "user": {
-            "userName": "ZinaSuperMom",
-            "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/ZinaSuperMom.webp",
-            "isVerificated": true
-          },
-          "comment": "Главное, чтобы тебе было удобно и весело!"
-        }
-      ],
-      "id": 547190
-    }
-  },
-  {
-    "user": {
-      "userName": "MarsCuteCat",
-      "isVerificated": true,
-      "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/profileImage.webp"
-    },
-    "post": {
-      "images": [
         "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/img011.jpg"
       ],
       "description": "В глубине каждого леса живет маленький тигр.",
