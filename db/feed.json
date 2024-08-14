@@ -387,5 +387,49 @@
         }
       }
     ]
+  },
+  {
+    "creatorId": "mar777",
+    "post": {
+      "postImages": [
+        "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/feed/img010.jpg"
+      ],
+      "postId": "579029",
+      "postDescription": "Быть или не быть на дереве? Вот в чем вопрос. Но, честно говоря, мне здесь очень нравится.",
+      "postTimeStamp": "8 дней назад",
+      "postLikes": {
+        "lastLikedUsers": ["zin553", "hbx687", "fil123"],
+        "numberOfLikes": 901
+      }
+    },
+    "comments": [
+      {
+        "commentId": "vbe9bug",
+        "userId": "fil123",
+        "commentText": "Согласен, деревья - это отличный выбор для отдыха!",
+        "commentTimeStamp": "8 дней назад",
+        "likes": {
+          "numberOfLikes": 445
+        }
+      },
+      {
+        "commentId": "kw9bnm",
+        "userId": "hbx687",
+        "commentText": "Кошачье счастье в полном объёме! 😺",
+        "commentTimeStamp": "7 дней назад",
+        "likes": {
+          "numberOfLikes": 433
+        }
+      },
+      {
+        "commentId": "oib95yu",
+        "userId": "zin553",
+        "commentText": "Главное, чтобы тебе было удобно и весело!",
+        "commentTimeStamp": "6 дней назад",
+        "likes": {
+          "numberOfLikes": 341
+        }
+      }
+    ]
   }
 ]
