@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Post from './post/Post';
 // Import Functions
 import getFeed from '../../../services/getFeed';
+import { localStorageManager } from '../../../utils/localStorageManager';
 
 const Feed = () => {
   // Create Dispatch Function
@@ -13,6 +14,8 @@ const Feed = () => {
   const posts = useSelector((state) => state.feed.posts);
   // Get Feed From Server
   useEffect(() => {
+    const localFeed = localStorageManager('get', 'feed');
+    console.log(localFeed);
     if (posts.length === 0) {
       dispatchAction(getFeed());
     }
