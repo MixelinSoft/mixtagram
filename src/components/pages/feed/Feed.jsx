@@ -6,20 +6,29 @@ import Post from './post/Post';
 // Import Functions
 import getFeed from '../../../services/getFeed';
 import { localStorageManager } from '../../../utils/localStorageManager';
+import { feedActions } from '../../../store/slices/feedSlice';
 
 const Feed = () => {
   // Create Dispatch Function
   const dispatchAction = useDispatch();
   // Get Posts From Store
   const posts = useSelector((state) => state.feed.posts);
-  // Get Feed From Server
+  // Get Feed From Server or Local Storage
   useEffect(() => {
     const localFeed = localStorageManager('get', 'feed');
-    console.log(localFeed);
-    if (posts.length === 0) {
+    if (posts.length === 0 && !localFeed) {
       dispatchAction(getFeed());
+    } else {
+      dispatchAction(feedActions.setPosts(localFeed));
     }
-  }, [posts, dispatchAction, getFeed]);
+  }, [dispatchAction, getFeed]);
+  // Set Feed To Local Storage
+  useEffect(() => {
+    const localFeed = localStorageManager('get', 'feed');
+    if (!localFeed && posts.length !== 0) {
+      localStorageManager('set', 'feed', posts);
+    }
+  }, [posts]);
 
   return (
     <>
