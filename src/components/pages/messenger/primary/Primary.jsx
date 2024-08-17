@@ -28,12 +28,11 @@ const Primary = (props) => {
       localStorageManager('set', 'direct', messages);
     }
   }, [messages]);
-  // Get Messages From LocalStorage
 
   return (
     <div>
       <Tabs currentTab='primary' />
-      {messages &&
+      {messages.length > 0 &&
         messages.map((dialog) => (
           <DialogItem dialog={dialog} key={dialog.dialogId} />
         ))}

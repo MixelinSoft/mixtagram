@@ -4,6 +4,7 @@ import styles from './Footer.module.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Icon from '../../ui/Icon/Icon';
+import { clearLocalStorage } from '../../../utils/clearLocalStorage';
 
 const Footer = () => {
   // Get Location
@@ -18,7 +19,7 @@ const Footer = () => {
     navigate(path);
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Плавная прокрутка
+      behavior: 'smooth',
     });
   };
 
@@ -47,7 +48,13 @@ const Footer = () => {
         <Icon icon='direct' />
       </ActionButton>
 
-      <ActionButton className={styles.profile}>
+      <ActionButton
+        className={styles.profile}
+        onClick={() => {
+          clearLocalStorage();
+          alert('Хранилище Очищено!');
+        }}
+      >
         <img src={user.userPhoto} width='24px' height='24px' />
       </ActionButton>
     </div>

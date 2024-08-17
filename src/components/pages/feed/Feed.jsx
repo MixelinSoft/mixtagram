@@ -15,18 +15,17 @@ const Feed = () => {
   const posts = useSelector((state) => state.feed.posts);
   // Get Feed From Server or Local Storage
   useEffect(() => {
-    const localFeed = localStorageManager('get', 'feed');
-    if (posts.length === 0 && !localFeed) {
+    if (posts.length === 0) {
       dispatchAction(getFeed());
-    } else {
-      dispatchAction(feedActions.setPosts(localFeed));
     }
   }, []);
-  // Set Feed To Local Storage
+
   useEffect(() => {
-    const localFeed = localStorageManager('get', 'feed');
-    if (!localFeed && posts.length !== 0) {
-      localStorageManager('set', 'feed', posts);
+    if (posts.length > 0) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     }
   }, [posts]);
 

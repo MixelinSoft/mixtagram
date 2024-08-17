@@ -21,7 +21,15 @@ const DialogContainer = (props) => {
   });
   const messages = props.dialog.messages;
 
-  const storeMessages = useSelector((state) => state.direct.primary);
+  const storeDirect = useSelector((state) => state.direct.primary);
+  const storeMessages = storeDirect.find(
+    (dialog) => dialog.dialogId === props.dialog.dialogId,
+  ).messages;
+  useEffect(() => {
+    if (storeMessages.legth !== messages) {
+      localStorageManager('set', 'direct', messages);
+    }
+  }, [messages, storeMessages]);
 
   // Create MessagesEnd Ref
   const messagesEndRef = useRef(null);

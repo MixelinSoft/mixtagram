@@ -5,6 +5,7 @@ import feedSlice from './slices/feedSlice';
 import userSlice from './slices/userSlice';
 import usersSlice from './slices/usersSlice';
 import directSlice from './slices/directSlice';
+import loadingSlice from './slices/loadingSlice';
 
 const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ const store = configureStore({
     users: usersSlice,
     feed: feedSlice,
     direct: directSlice,
+    loading: loadingSlice,
   },
 });
 

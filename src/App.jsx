@@ -10,6 +10,8 @@ import styles from './App.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import getUser from './services/getUser';
 import getUsers from './services/getUsers';
+import LoadingBar from './components/ui/LoadingBar/LoadingBar';
+import { loadingActions } from './store/slices/loadingSlice';
 
 function App() {
   // Create Dispatch Function
@@ -32,6 +34,7 @@ function App() {
 
   return (
     <div className={styles.app}>
+      <LoadingBar />
       <Header />
       <Main />
       <Footer />

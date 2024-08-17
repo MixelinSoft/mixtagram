@@ -31,8 +31,7 @@ const Main = (props) => {
         <Route path='/direct/requests/' element={<Requests />} />
         <Route path='/direct/general/' element={<General />} />
         {/* Create Routes For Dialogs */}
-        {directDialogs &&
-          directDialogs.length > 0 &&
+        {directDialogs.length > 0 &&
           directDialogs.map((dialog) => (
             <Route
               path={`/direct/inbox/${dialog.dialogId}/`}
