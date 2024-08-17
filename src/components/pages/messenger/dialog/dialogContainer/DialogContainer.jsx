@@ -6,6 +6,7 @@ import { getMessagePosition } from '../../../../../utils/getMessagePosition';
 import { directActions } from '../../../../../store/slices/directSlice';
 import { useEffect, useRef } from 'react';
 import { getAnimalResponse } from '../../../../../utils/chatBot';
+import { localStorageManager } from '../../../../../utils/localStorageManager';
 
 const DialogContainer = (props) => {
   // Create Dispatch Function
@@ -20,9 +21,12 @@ const DialogContainer = (props) => {
   });
   const messages = props.dialog.messages;
 
+  const storeMessages = useSelector((state) => state.direct.primary);
+
   // Create MessagesEnd Ref
   const messagesEndRef = useRef(null);
 
+  // Send Meesage Function
   const sendMessage = (content) => {
     dispatchAction(
       directActions.sendMessage({
@@ -30,6 +34,7 @@ const DialogContainer = (props) => {
         content,
         isIncoming: false,
       }),
+      console.log(messages),
     );
     getAnimalResponse(interlocutor.animal, (response) => {
       dispatchAction(

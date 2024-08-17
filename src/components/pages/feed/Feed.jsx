@@ -21,7 +21,7 @@ const Feed = () => {
     } else {
       dispatchAction(feedActions.setPosts(localFeed));
     }
-  }, [dispatchAction, getFeed]);
+  }, []);
   // Set Feed To Local Storage
   useEffect(() => {
     const localFeed = localStorageManager('get', 'feed');
