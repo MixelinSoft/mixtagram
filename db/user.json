@@ -1,6 +1,9 @@
 {
   "userName": "MarsCuteCat",
+  "userRealName": "Марс Кот",
   "userPhoto": "https://raw.githubusercontent.com/MixelinSoft/mixtagram/main/db/images/users/MarsCuteCat/profileImage.webp",
   "userId": "mar777",
+  "profileType": "Личный Блог",
+  "profileDescription": "Просто Кот)",
   "isVerificated": true
 }
