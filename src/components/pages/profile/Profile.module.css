@@ -2,10 +2,8 @@
 }
 
 .user {
-  height: 314px;
+  height: 253px;
   padding: 16px;
-
-  border: 1px solid red;
 }
 
 .userInfo {
@@ -27,9 +25,41 @@
 .info {
   width: 100%;
   padding: 0 16px;
-  border: 1px solid green;
 }
 
 .userName {
   font-size: 16px;
+}
+
+.socialInfo {
+  height: 61px;
+
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-left: none;
+  border-right: none;
+}
+
+.viewSettings {
+  height: 44px;
+}
+
+.posts {
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+.postGrid {
+  width: 33vw;
+  height: 33vw;
+}
+
+.postImageGrid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }

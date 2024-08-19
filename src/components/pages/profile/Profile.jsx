@@ -3,6 +3,9 @@ import styles from './Profile.module.css';
 
 const Profile = (props) => {
   const user = useSelector((state) => state.user);
+
+  const posts = useSelector((state) => state.feed.posts);
+
   return (
     <div className={styles.container}>
       <div className={styles.user}>
@@ -27,10 +30,20 @@ const Profile = (props) => {
           </div>
         </div>
         <div className={styles.profileDescription}></div>
-        <div className={styles.socialInfo}>socialInfo</div>
       </div>
+      <div className={styles.socialInfo}>socialInfo</div>
       <div className={styles.viewSettings}>viewSettings</div>
-      <div className={styles.posts}>posts</div>
+      <div className={styles.postsGrid}>
+        {posts &&
+          posts.map((post) => (
+            <div className={styles.postGrid}>
+              <img
+                className={styles.postImageGrid}
+                src={post.post.postImages[0]}
+              />
+            </div>
+          ))}
+      </div>
     </div>
   );
 };
