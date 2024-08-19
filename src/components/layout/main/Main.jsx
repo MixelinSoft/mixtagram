@@ -10,12 +10,15 @@ import Requests from '../../pages/messenger/requests/Requests';
 import General from '../../pages/messenger/general/General';
 import { useSelector } from 'react-redux';
 import DialogContainer from '../../pages/messenger/dialog/dialogContainer/DialogContainer';
+import Profile from '../../pages/profile/Profile';
 
 const Main = (props) => {
   // Create Navigation Function
   const navigate = useNavigate();
   // Get Dialogs From Store
   const directDialogs = useSelector((state) => state.direct.primary);
+  // Get User From Store
+  const user = useSelector((state) => state.user);
   // Redirect to Feed on Load App
   useEffect(() => {
     navigate('/feed/');
@@ -30,6 +33,10 @@ const Main = (props) => {
         <Route path='/direct/inbox/' element={<Inbox />} />
         <Route path='/direct/requests/' element={<Requests />} />
         <Route path='/direct/general/' element={<General />} />
+        {/* Create Profile Route */}
+        {user.userName && (
+          <Route element={<Profile />} path={`/${user.userName}`} />
+        )}
         {/* Create Routes For Dialogs */}
         {directDialogs.length > 0 &&
           directDialogs.map((dialog) => (

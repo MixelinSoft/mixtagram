@@ -40,7 +40,12 @@ const Footer = () => {
         <Icon icon='search' />
       </ActionButton>
 
-      <ActionButton>
+      <ActionButton
+        onClick={() => {
+          clearLocalStorage();
+          alert('Хранилище Очищено!');
+        }}
+      >
         <Icon icon='reels' />
       </ActionButton>
 
@@ -49,11 +54,10 @@ const Footer = () => {
       </ActionButton>
 
       <ActionButton
-        className={styles.profile}
-        onClick={() => {
-          clearLocalStorage();
-          alert('Хранилище Очищено!');
-        }}
+        className={`${styles.profile} ${
+          location.pathname === '/' + user.userName && styles.profileActive
+        }`}
+        onClick={() => navigateHandler(`/${user.userName}`)}
       >
         <img src={user.userPhoto} width='24px' height='24px' />
       </ActionButton>

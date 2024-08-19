@@ -10,6 +10,7 @@ import CommentsHeader from './commentsHeader/CommentsHeader';
 import DirectHeader from './directHeader/DirectHeader';
 import RequestsHeader from './requestsHeader/RequestsHeader';
 import InboxHeader from './inboxHeader/InboxHeader';
+import ProfileHeader from './profileHeader/ProfileHeader';
 
 const Header = () => {
   // Get Location From URL
@@ -30,6 +31,8 @@ const Header = () => {
     return <RequestsHeader />;
   } else if (location.pathname.includes('/inbox/')) {
     return <InboxHeader dialog={location.pathname.slice(-6)} />;
+  } else if (location.pathname === `/${user.userName}`) {
+    return <ProfileHeader />;
   }
 };
 

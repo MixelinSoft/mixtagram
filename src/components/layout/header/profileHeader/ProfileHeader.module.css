@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 44px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background-color: #fff;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+
+  box-shadow: 0 7px 2px -7px rgba(0, 0, 0, 0.2);
+
+  z-index: 999;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 800;
+}

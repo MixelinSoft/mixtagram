@@ -24,11 +24,17 @@
   height: 24px;
 
   border-radius: 50%;
-  outline: 1px solid rgb(0, 0, 0);
+  outline: 1px solid rgba(128, 128, 128, 0.5);
 
   overflow: hidden;
 }
 
 .hide {
   display: none;
+}
+
+.profileActive {
+  width: 26px;
+  height: 26px;
+  border: 2px solid black;
 }
