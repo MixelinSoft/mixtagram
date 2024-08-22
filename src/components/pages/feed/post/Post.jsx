@@ -17,8 +17,9 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 // Import CSS
 import styles from './Post.module.css';
+import Button from '../../../ui/Button/Button';
 
-const Post = ({ post }) => {
+const Post = ({ post, inProfile }) => {
   // Get Users From Store
   const users = useSelector((state) => state.users.users);
   // Find Creator
@@ -75,6 +76,12 @@ const Post = ({ post }) => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+      )}
+      {inProfile && (
+        <div className={styles.profileButtons}>
+          <Button variant='transparentBlue'>Статистика</Button>
+          <Button variant='blue'>Продвигать публикацию</Button>
         </div>
       )}
       <div className={styles.info}>

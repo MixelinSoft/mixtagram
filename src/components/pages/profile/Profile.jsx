@@ -4,6 +4,7 @@ import { useState } from 'react';
 import ActionButton from '../../ui/ActionButton/ActionButton';
 import Icon from '../../ui/Icon/Icon';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Post from '../feed/post/Post';
 
 const Profile = (props) => {
   // Get User From Store
@@ -102,8 +103,8 @@ const Profile = (props) => {
       {/* View Feed */}
       {posts && viewMethod === 'feed' && (
         <div className={styles.postsFeed}>
-          {posts.map((posts) => (
-            <div className={styles.postFeed}>post</div>
+          {posts.map((post) => (
+            <Post post={post} inProfile />
           ))}
         </div>
       )}

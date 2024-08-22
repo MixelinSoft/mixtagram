@@ -1,0 +1,21 @@
+.button {
+  height: 32px;
+
+  padding: 0 16px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  border-radius: 6px;
+}
+
+.blue {
+  color: white;
+  background-color: #0095f6;
+}
+
+.transparentBlue {
+  padding: 0;
+  background-color: #fff;
+  color: #0095f6;
+}
