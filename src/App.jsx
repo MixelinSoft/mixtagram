@@ -12,6 +12,8 @@ import getUser from './services/getUser';
 import getUsers from './services/getUsers';
 import LoadingBar from './components/ui/LoadingBar/LoadingBar';
 import { loadingActions } from './store/slices/loadingSlice';
+import SplashScreen from './components/ui/SplashScreen/SplashScreen';
+import { startupActions } from './store/slices/startupSlice';
 
 function App() {
   // Create Dispatch Function
@@ -19,6 +21,9 @@ function App() {
   // Get Data From Store
   const user = useSelector((state) => state.user);
   const users = useSelector((state) => state.users.users);
+  const showedSplash = useSelector((state) => state.startup.showedSplash);
+  console.log(showedSplash);
+
   // Get User On Load
   useEffect(() => {
     if (!user.userName) {
@@ -31,13 +36,27 @@ function App() {
       dispatchAction(getUsers());
     }
   }, [users, dispatchAction, getUsers]);
+  // Hide SplashScreen After 5 seconds
+  useEffect(() => {
+    if (!showedSplash) {
+      setTimeout(() => {
+        dispatchAction(startupActions.setShowedSplash(true));
+      }, 2000);
+    }
+  }, [showedSplash, dispatchAction]);
 
   return (
     <div className={styles.app}>
-      <LoadingBar />
-      <Header />
-      <Main />
-      <Footer />
+      {showedSplash ? (
+        <>
+          <LoadingBar />
+          <Header />
+          <Main />
+          <Footer />
+        </>
+      ) : (
+        <SplashScreen />
+      )}
     </div>
   );
 }
