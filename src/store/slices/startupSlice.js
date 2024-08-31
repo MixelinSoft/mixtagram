@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 // Create Initial State
 const initialState = {
   showedSplash: false,
+  acceptedRules: false,
 };
 
 // Create Slice
@@ -12,6 +13,9 @@ const startupSlice = createSlice({
   reducers: {
     setShowedSplash(state, { payload }) {
       state.showedSplash = payload;
+    },
+    setAcceptedRules(state, { payload }) {
+      state.acceptedRules = payload;
     },
   },
 });

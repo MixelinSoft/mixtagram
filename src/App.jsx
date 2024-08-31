@@ -14,6 +14,7 @@ import LoadingBar from './components/ui/LoadingBar/LoadingBar';
 import { loadingActions } from './store/slices/loadingSlice';
 import SplashScreen from './components/ui/SplashScreen/SplashScreen';
 import { startupActions } from './store/slices/startupSlice';
+import Disclaimer from './components/pages/disclaimer/Disclaimer';
 
 function App() {
   // Create Dispatch Function
@@ -22,7 +23,7 @@ function App() {
   const user = useSelector((state) => state.user);
   const users = useSelector((state) => state.users.users);
   const showedSplash = useSelector((state) => state.startup.showedSplash);
-  console.log(showedSplash);
+  const acceptedRules = useSelector((state) => state.startup.acceptedRules);
 
   // Get User On Load
   useEffect(() => {
@@ -45,15 +46,25 @@ function App() {
     }
   }, [showedSplash, dispatchAction]);
 
+  useEffect(() => {
+    dispatchAction(
+      startupActions.setAcceptedRules(localStorage.getItem('acceptedRules')),
+    );
+  }, [dispatchAction]);
+
   return (
     <div className={styles.app}>
       {showedSplash ? (
-        <>
-          <LoadingBar />
-          <Header />
-          <Main />
-          <Footer />
-        </>
+        acceptedRules ? (
+          <>
+            <LoadingBar />
+            <Header />
+            <Main />
+            <Footer />
+          </>
+        ) : (
+          <Disclaimer />
+        )
       ) : (
         <SplashScreen />
       )}

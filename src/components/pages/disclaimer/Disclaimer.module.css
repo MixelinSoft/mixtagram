@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+
+  padding: 16px;
+}
+
+.header {
+  text-align: center;
+
+  background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.rules {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.confirm {
+  margin-top: 40px;
+}
+
+.confirmText {
+  text-align: center;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.confirmButtons {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
