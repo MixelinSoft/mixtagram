@@ -12,22 +12,10 @@ const Primary = (props) => {
   const dispatchAction = useDispatch();
   // Get Messages From Store
   const messages = useSelector((state) => state.direct.primary);
-  // Get Messages From Server
-  useEffect(() => {
-    const localDirect = localStorageManager('get', 'direct');
-    if (!localDirect) {
-      dispatchAction(getDirect());
-    }
-    if (messages.length > 0 && !localDirect) {
-      localStorageManager('set', 'direct', messages);
-    }
-    if (localDirect && localDirect.length > 0 && messages.length === 0) {
-      dispatchAction(directActions.setPrimary(localDirect));
-    }
-    if (messages.length > 0) {
-      localStorageManager('set', 'direct', messages);
-    }
-  }, [messages]);
+
+  if (messages.length === 0) {
+    dispatchAction(getDirect());
+  }
 
   return (
     <div>
